@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/customutils/src/main/java/com/example/customutils/utils/AnimationUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/customutils/src/main/java/com/example/customutils/utils/AntiEmulatorUtiles.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/customutils/src/main/java/com/example/customutils/utils/DataCleanManager.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/customutils/src/main/java/com/example/customutils/utils/DisplayUtil.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/customutils/src/main/java/com/example/customutils/utils/HttpUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/customutils/src/main/java/com/example/customutils/utils/ManifestUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/customutils/src/main/java/com/example/customutils/utils/SharedPreferencesUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/customutils/src/main/java/com/example/customutils/utils/ToastUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/customutils/src/main/java/com/example/customutils/utils/ViewFinder.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/customutils/src/main/java/com/example/customutils/utils/WifiAdmin.java" charset="UTF-8" />
+  </component>
+</project>
