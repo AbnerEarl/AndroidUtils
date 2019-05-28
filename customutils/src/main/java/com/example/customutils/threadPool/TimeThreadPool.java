@@ -7,10 +7,6 @@ import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
-/**
- * threadPool com.xh.threadPool 2018 2018-4-26 ����11:58:32 instructions��
- * author:liuhuiliang email:825378291@qq.com
- **/
 
 public class TimeThreadPool {
 	private final static String TAG = "TimeThreadPool";
@@ -41,16 +37,6 @@ public class TimeThreadPool {
 		return true;
 	}
 
-	/**
-	 * 
-	 * 2018 2018-4-26 ����12:30:32 annotation���ύ���� author��liuhuiliang email
-	 * ��825378291@qq.com
-	 * 
-	 * @param command
-	 *            ����
-	 * @param delay
-	 *            �ӳ�ʱ�䵥λ���� void
-	 */
 	public void submit(Runnable command, long delay) {
 		if (!isSubmit(command))
 			return;
@@ -61,28 +47,11 @@ public class TimeThreadPool {
 		}
 	}
 
-	/**
-	 * 
-	 * 2018 2018-4-26 ����2:30:49 annotation���ύ���� author��liuhuiliang email
-	 * ��825378291@qq.com
-	 * 
-	 * @param command
-	 *            ���� void
-	 */
 	public void submit(Runnable command) {
 		submit(command, new Date());
 	}
 
-	/**
-	 * 
-	 * 2018 2018-4-26 ����12:32:06 annotation���ύ���� author��liuhuiliang email
-	 * ��825378291@qq.com
-	 * 
-	 * @param command
-	 *            ����
-	 * @param time
-	 *            ����ִ��ʱ�� void
-	 */
+
 	public void submit(Runnable command, Date time) {
 		if (!isSubmit(command))
 			return;
@@ -93,18 +62,7 @@ public class TimeThreadPool {
 		}
 	}
 
-	/**
-	 * 
-	 * 2018 2018-4-26 ����12:33:39 annotation���ύ���� author��liuhuiliang email
-	 * ��825378291@qq.com
-	 * 
-	 * @param command
-	 *            ����
-	 * @param delay
-	 *            �ӳ�ʱ�䵥λ����
-	 * @param period
-	 *            ���ڵ�λ���� void
-	 */
+
 	public void submit(Runnable command, long delay, long period) {
 		if (!isSubmit(command))
 			return;
@@ -115,20 +73,6 @@ public class TimeThreadPool {
 		}
 	}
 
-	/**
-	 * 
-	 * 2018 2018-4-26 ����2:36:50 annotation���ύ���� author��liuhuiliang email
-	 * ��825378291@qq.com
-	 * 
-	 * @param command
-	 *            ����
-	 * @param delay
-	 *            �ӳ�ʱ�䵥λ����
-	 * @param period
-	 *            ���ڵ�λ����
-	 * @param num
-	 *            ִ�д��� void
-	 */
 	public void submit(Runnable command, long delay, long period, long num) {
 		if (!isSubmit(command))
 			return;
@@ -140,18 +84,6 @@ public class TimeThreadPool {
 		}
 	}
 
-	/**
-	 * 
-	 * 2018 2018-4-26 ����12:34:29 annotation���ύ���� author��liuhuiliang email
-	 * ��825378291@qq.com
-	 * 
-	 * @param command
-	 *            ����
-	 * @param time
-	 *            ִ��ʱ��
-	 * @param period
-	 *            ���ڵ�λ���� void
-	 */
 	public void submit(Runnable command, Date time, long period) {
 		if (!isSubmit(command))
 			return;
@@ -162,20 +94,7 @@ public class TimeThreadPool {
 		}
 	}
 
-	/**
-	 * 
-	 * 2018 2018-4-26 ����2:38:10 annotation���ύ���� author��liuhuiliang email
-	 * ��825378291@qq.com
-	 * 
-	 * @param command
-	 *            ����
-	 * @param time
-	 *            ִ��ʱ��
-	 * @param period
-	 *            ���ڵ�λ����
-	 * @param num
-	 *            ִ�д��� void
-	 */
+
 	public void submit(Runnable command, Date time, long period, long num) {
 		if (!isSubmit(command))
 			return;
@@ -187,15 +106,7 @@ public class TimeThreadPool {
 		}
 	}
 
-	/**
-	 * 
-	 * 2018 2018-4-26 ����2:25:03 annotation���Ƴ����� author��liuhuiliang email
-	 * ��825378291@qq.com
-	 * 
-	 * @param runnable
-	 *            ��Ҫ�Ƴ�������
-	 * @return boolean
-	 */
+
 	public boolean remove(Runnable runnable) {
 		Task task = new Task(runnable);
 		synchronized (mTasks) {
@@ -215,15 +126,7 @@ public class TimeThreadPool {
 		return false;
 	}
 
-	/**
-	 * 
-	 * 2018 2018-4-26 ����2:25:31 annotation���Ƴ����� author��liuhuiliang email
-	 * ��825378291@qq.com
-	 * 
-	 * @param commands
-	 *            ��Ҫ�Ƴ���������
-	 * @return Collection<Runnable>
-	 */
+
 	public Collection<Runnable> remove(Collection<Runnable> commands) {
 		if (commands == null || commands.size() <= 0)
 			return null;
@@ -239,11 +142,7 @@ public class TimeThreadPool {
 		return mList;
 	}
 
-	/**
-	 * 
-	 * 2018 2018-4-26 ����12:03:02 annotation��ֹͣ���� author��liuhuiliang email
-	 * ��825378291@qq.com void
-	 */
+
 	public void shutdownNow() {
 		isShutdown = true;
 		mTimer.cancel();

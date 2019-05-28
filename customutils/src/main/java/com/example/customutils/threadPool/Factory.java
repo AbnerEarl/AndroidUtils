@@ -2,10 +2,6 @@ package com.example.customutils.threadPool;
 
 import java.util.concurrent.ThreadFactory;
 
-/**
- * threadPool com.xh.threadPool 2018 2018-4-26 ����10:02:41 instructions��
- * author:liuhuiliang email:825378291@qq.com
- **/
 
 public class Factory implements ThreadFactory {
 	private final static String TAG = "Factory";
